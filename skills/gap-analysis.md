@@ -5,7 +5,7 @@ title: Gap Analysis
 description: "Identifies what existing research hasn't covered"
 tags: [Needs Review]
 connections:
-  - target: anthropic-claude
+  - target: llm-service
     type: runs_on
 ---
 

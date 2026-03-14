@@ -17,9 +17,7 @@ connections:
     type: uses
   - target: research-proposal-writer
     type: uses
-  - target: anthropic-claude
-    type: runs_on
-  - target: openai-gpt4
+  - target: llm-service
     type: runs_on
 metadata:
   estimated_duration: "30-60 minutes"
@@ -72,3 +70,47 @@ Invoke the **research-proposal-writer** prompt to produce a complete proposal co
 - If hypotheses are not testable with available resources, revise the scope or suggest collaboration
 - If methodology assessment identifies critical weaknesses, return to Stage 3 before drafting
 - If the proposal exceeds the target length, prioritise methodology and rationale sections — these are what reviewers scrutinise most
+
+## Inputs
+
+| Name | Required | Description | Example |
+|------|----------|-------------|---------|
+| `{{input.existing_literature_review_or}}` | Yes | Existing literature review or summary | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.research_field_description}}` | Yes | research field description | `Paste a short brief describing the goal, audience, and constraints.` |
+| `{{input.existing_findings_from_the}}` | Yes | existing findings from the literature | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.field_specific_standards}}` | No | field-specific standards | `Paste the relevant brief, notes, source material, or dataset here.` |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| Structured gap analysis | Structured gap analysis with prioritised opportunities |
+| 3-5 testable hypotheses ranked by promise and feasibility | 3-5 testable hypotheses ranked by promise and feasibility |
+| Assessed and refined methodology | Assessed and refined methodology |
+| Complete research proposal draft | Complete research proposal draft |
+
+## Setup
+
+Before running this workflow:
+
+1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
+2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
+
+## Provider Notes
+
+- Most stages work with any capable model; stronger models usually improve synthesis, judgement, and writing quality.
+- Extraction, classification, and formatting steps generally run well on smaller or faster models.
+- Because there are no vendor-specific integrations here, provider choice is mostly a trade-off between speed, quality, and cost.
+
+## Example Input
+
+To test this workflow immediately after import:
+
+```
+Existing Literature Review Or: "Paste the relevant brief, notes, source material, or dataset here."
+Research Field Description: "Paste a short brief describing the goal, audience, and constraints."
+Existing Findings From The: "Paste the relevant brief, notes, source material, or dataset here."
+Field Specific Standards: "Paste the relevant brief, notes, source material, or dataset here."
+```
+

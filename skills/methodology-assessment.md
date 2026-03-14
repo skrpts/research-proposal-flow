@@ -5,7 +5,7 @@ title: Methodology Assessment
 description: "Evaluates research methodology quality and appropriateness"
 tags: [Needs Review]
 connections:
-  - target: openai-gpt4
+  - target: llm-service
     type: runs_on
   - target: prisma-2020-guidelines
     type: references
