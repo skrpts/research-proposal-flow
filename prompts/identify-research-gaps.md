@@ -3,7 +3,7 @@ type: prompt
 id: identify-research-gaps
 title: Identify Research Gaps
 description: "Analyses existing literature to identify gaps and opportunities for new research"
-tags: []
+tags: [Production]
 connections:
   - target: gap-analysis
     type: derived_from
@@ -28,9 +28,9 @@ You are a research methodologist. Analyse the existing literature on the topic b
 
 ### Inputs
 
-- **Literature summary:** {literature}
-- **Research field:** {field}
-- **Known limitations from existing studies:** {limitations}
+- **Literature summary:** {{input.existing_literature_review_or}}
+- **Research field:** {{input.research_field_description}}
+- **Known limitations from existing studies:** {{input.existing_findings_from_the}}
 
 ## Formatting Rules
 

@@ -3,7 +3,7 @@ type: prompt
 id: assess-methodology
 title: Assess Methodology
 description: "Evaluates a research methodology for rigour and appropriateness"
-tags: []
+tags: [Production]
 connections:
   - target: methodology-assessment
     type: derived_from
@@ -31,9 +31,9 @@ You are a research methodologist. Evaluate the methodology described below again
 
 ### Inputs
 
-- **Research question:** {question}
-- **Proposed methodology:** {methodology}
-- **Field-specific standards:** {standards}
+- **Research question:** [the research question derived from the gap analysis]
+- **Proposed methodology:** [the proposed methodology to assess]
+- **Field-specific standards:** {{input.field_specific_standards}}
 
 ## Formatting Rules
 

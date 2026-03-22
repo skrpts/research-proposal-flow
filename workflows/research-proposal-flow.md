@@ -3,7 +3,7 @@ type: workflow
 id: research-proposal-flow
 title: Research Proposal Flow
 description: "Gap analysis, hypothesis generation, methodology design, and proposal drafting"
-tags: [Draft]
+tags: [Production]
 connections:
   - target: gap-analysis
     type: uses
@@ -75,10 +75,12 @@ Invoke the **research-proposal-writer** prompt to produce a complete proposal co
 
 | Name | Required | Description | Example |
 |------|----------|-------------|---------|
-| `{{input.existing_literature_review_or}}` | Yes | Existing literature review or summary | `Paste the relevant brief, notes, source material, or dataset here.` |
-| `{{input.research_field_description}}` | Yes | research field description | `Paste a short brief describing the goal, audience, and constraints.` |
-| `{{input.existing_findings_from_the}}` | Yes | existing findings from the literature | `Paste the relevant brief, notes, source material, or dataset here.` |
-| `{{input.field_specific_standards}}` | No | field-specific standards | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.existing_literature_review_or}}` | Yes | Existing literature review or summary of the field | `Paste your literature review or summary of existing research here.` |
+| `{{input.research_field_description}}` | Yes | Description of the research field or discipline | `Educational technology in UK higher education` |
+| `{{input.existing_findings_from_the}}` | Yes | Existing findings from the literature and known limitations | `Studies show X but have not examined Y...` |
+| `{{input.field_specific_standards}}` | No | Field-specific methodological standards | `CONSORT for RCTs, PRISMA for systematic reviews` |
+| `{{input.available_resources}}` | No | Available resources and constraints for the proposed research | `12-month timeline, access to 3 secondary schools, no external funding` |
+| `{{input.target_length}}` | No | Target length for the proposal | `3000 words` |
 
 ## Outputs
 

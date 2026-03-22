@@ -3,7 +3,7 @@ type: prompt
 id: hypothesis-generator
 title: Hypothesis Generator
 description: "Generates testable hypotheses from research gaps and existing findings"
-tags: []
+tags: [Production]
 connections:
   - target: gap-analysis
     type: derived_from
@@ -31,10 +31,10 @@ Generate 3-5 hypotheses, ordered from most to least promising based on theoretic
 
 ### Inputs
 
-- **Gap analysis:** {gaps}
-- **Existing findings:** {findings}
-- **Research field:** {field}
-- **Available resources/constraints:** {resources}
+- **Gap analysis:** [the gap analysis from Stage 1]
+- **Available resources/constraints:** {{input.available_resources}}
+
+This prompt receives the gap analysis and the existing findings and research field context from Stage 1. Use the literature summary, known limitations, and field description established there as the foundation for generating hypotheses.
 
 ## Formatting Rules
 

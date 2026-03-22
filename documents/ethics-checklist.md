@@ -3,7 +3,7 @@ type: document
 id: ethics-checklist
 title: Ethics Checklist
 description: "Pre-submission checklist for research ethics applications"
-tags: []
+tags: [Production]
 connections: []
 ---
 

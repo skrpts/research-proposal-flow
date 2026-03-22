@@ -3,7 +3,7 @@ type: prompt
 id: research-proposal-writer
 title: Research Proposal Writer
 description: "Drafts a complete research proposal from hypotheses and methodology"
-tags: []
+tags: [Production]
 connections:
   - target: gap-analysis
     type: derived_from
@@ -36,12 +36,13 @@ You are an academic researcher. Draft a research proposal using the inputs below
 
 ### Inputs
 
-- **Research question:** {question}
-- **Hypotheses:** {hypotheses}
-- **Gap analysis:** {gaps}
-- **Methodology:** {methodology}
-- **Field/discipline:** {field}
-- **Target length:** {length}
+- **Research question:** [the research question derived from the gap analysis]
+- **Hypotheses:** [the hypotheses from Stage 2]
+- **Gap analysis:** [the gap analysis from Stage 1]
+- **Methodology:** [the assessed methodology from Stage 3]
+- **Target length:** {{input.target_length}}
+
+This prompt receives all outputs from the previous stages. Use the research field description and existing literature from Stage 1 to ground the proposal's introduction and rationale.
 
 ## Formatting Rules
 
