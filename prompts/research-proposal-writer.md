@@ -36,13 +36,13 @@ You are an academic researcher. Draft a research proposal using the inputs below
 
 ### Inputs
 
-- **Research question:** [the research question derived from the gap analysis]
-- **Hypotheses:** [the hypotheses from Stage 2]
-- **Gap analysis:** [the gap analysis from Stage 1]
-- **Methodology:** [the assessed methodology from Stage 3]
+- **Research question:** {{steps.identify-research-gaps.output}}
+- **Hypotheses:** {{steps.hypothesis-generator.output}}
+- **Gap analysis:** {{steps.identify-research-gaps.output}}
+- **Methodology:** {{steps.assess-methodology.output}}
 - **Target length:** {{input.target_length}}
 
-This prompt receives all outputs from the previous stages. Use the research field description and existing literature from Stage 1 to ground the proposal's introduction and rationale.
+Use the research field description and existing literature from the gap analysis to ground the proposal's introduction and rationale.
 
 ## Formatting Rules
 

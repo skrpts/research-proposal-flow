@@ -31,10 +31,10 @@ Generate 3-5 hypotheses, ordered from most to least promising based on theoretic
 
 ### Inputs
 
-- **Gap analysis:** [the gap analysis from Stage 1]
+- **Gap analysis:** {{steps.identify-research-gaps.output}}
 - **Available resources/constraints:** {{input.available_resources}}
 
-This prompt receives the gap analysis and the existing findings and research field context from Stage 1. Use the literature summary, known limitations, and field description established there as the foundation for generating hypotheses.
+Use the literature summary, known limitations, and field description established in the gap analysis as the foundation for generating hypotheses.
 
 ## Formatting Rules
 

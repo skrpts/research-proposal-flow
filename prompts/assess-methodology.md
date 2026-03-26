@@ -31,8 +31,8 @@ You are a research methodologist. Evaluate the methodology described below again
 
 ### Inputs
 
-- **Research question:** [the research question derived from the gap analysis]
-- **Proposed methodology:** [the proposed methodology to assess]
+- **Research question:** {{steps.identify-research-gaps.output}}
+- **Proposed methodology:** {{steps.hypothesis-generator.output}}
 - **Field-specific standards:** {{input.field_specific_standards}}
 
 ## Formatting Rules
