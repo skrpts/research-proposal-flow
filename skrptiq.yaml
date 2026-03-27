@@ -22,9 +22,12 @@ tags:
 
 # --- Security & Access ---
 requires:
-  services: []
-  permissions: []
-  data_handling: []
+  services:
+    - "llm-service"
+  permissions:
+    - "network:doi.org"
+  data_handling:
+    - "pii"
 
 # --- Contents ---
 contents:
