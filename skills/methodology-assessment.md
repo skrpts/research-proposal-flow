@@ -3,7 +3,7 @@ type: skill
 id: methodology-assessment
 title: Methodology Assessment
 description: "Evaluates research methodology quality and appropriateness"
-tags: [Production, planning:research, writing:academic]
+tags: [Production, Academic, Research]
 connections:
   - target: llm-service
     type: runs_on

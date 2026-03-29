@@ -3,7 +3,7 @@ type: document
 id: research-protocol-template
 title: Research Protocol Template
 description: "Structured template for documenting a research study protocol"
-tags: [Production, planning:research, writing:academic]
+tags: [Production, Academic, Research]
 connections: []
 ---
 

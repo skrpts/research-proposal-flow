@@ -3,7 +3,7 @@ type: skill
 id: gap-analysis
 title: Gap Analysis
 description: "Identifies what existing research hasn't covered"
-tags: [Production, analysis:risk, planning:research, optimisation:content]
+tags: [Production, Academic, Risk]
 connections:
   - target: llm-service
     type: runs_on
