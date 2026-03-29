@@ -3,7 +3,7 @@ type: source
 id: research-ethics-framework
 title: Research Ethics Framework
 description: "Core principles and requirements for ethical research conduct"
-tags: [Production]
+tags: [Production, planning:research, research:ethics]
 connections: []
 ---
 

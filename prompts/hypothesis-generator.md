@@ -3,7 +3,7 @@ type: prompt
 id: hypothesis-generator
 title: Hypothesis Generator
 description: "Generates testable hypotheses from research gaps and existing findings"
-tags: [Production]
+tags: [Production, planning:research, writing:academic]
 connections:
   - target: gap-analysis
     type: derived_from

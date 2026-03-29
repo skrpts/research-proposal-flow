@@ -3,7 +3,7 @@ type: workflow
 id: research-proposal-flow
 title: Research Proposal Flow
 description: "Gap analysis, hypothesis generation, methodology design, and proposal drafting"
-tags: [Production]
+tags: [Production, analysis:risk, planning:research, optimisation:content]
 connections:
   - target: gap-analysis
     type: uses

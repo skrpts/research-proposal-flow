@@ -3,7 +3,7 @@ type: prompt
 id: identify-research-gaps
 title: Identify Research Gaps
 description: "Analyses existing literature to identify gaps and opportunities for new research"
-tags: [Production]
+tags: [Production, planning:research, writing:academic]
 connections:
   - target: gap-analysis
     type: derived_from

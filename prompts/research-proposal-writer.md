@@ -3,7 +3,7 @@ type: prompt
 id: research-proposal-writer
 title: Research Proposal Writer
 description: "Drafts a complete research proposal from hypotheses and methodology"
-tags: [Production]
+tags: [Production, planning:research, writing:academic]
 connections:
   - target: gap-analysis
     type: derived_from
