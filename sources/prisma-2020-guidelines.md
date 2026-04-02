@@ -49,4 +49,4 @@ Reference document for the PRISMA 2020 reporting standard. Used when assessing o
 
 ## Reference
 
-Page, M. J., et al. (2021). The PRISMA 2020 statement: An updated guideline for reporting systematic reviews. *BMJ*, 372, n71. https://doi.org/10.1136/bmj.n71
+Page, M. J., et al. (2021). The PRISMA 2020 statement: An updated guideline for reporting systematic reviews. *BMJ*, 372, n71. `https://doi.org/10.1136/bmj.n71`

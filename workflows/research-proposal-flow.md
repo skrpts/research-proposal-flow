@@ -19,14 +19,14 @@ connections:
     type: uses
   - target: llm-service
     type: runs_on
+  - target: research-ethics-framework
+  - target: ethics-checklist
+  - target: research-protocol-template
 metadata:
   estimated_duration: "30-60 minutes"
   trigger: manual
-  - target: research-ethics-framework
     type: references
-  - target: ethics-checklist
     type: references
-  - target: research-protocol-template
     type: references
 ---
 
