@@ -22,6 +22,12 @@ connections:
 metadata:
   estimated_duration: "30-60 minutes"
   trigger: manual
+  - target: research-ethics-framework
+    type: references
+  - target: ethics-checklist
+    type: references
+  - target: research-protocol-template
+    type: references
 ---
 
 ## Overview
