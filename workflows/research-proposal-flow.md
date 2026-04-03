@@ -5,11 +5,7 @@ title: Research Proposal Flow
 description: "Gap analysis, hypothesis generation, methodology design, and proposal drafting"
 tags: [Production, Academic, Research, Risk]
 connections:
-  - target: gap-analysis
-    type: uses
   - target: methodology-assessment
-    type: uses
-  - target: identify-research-gaps
     type: uses
   - target: assess-methodology
     type: uses
@@ -25,6 +21,10 @@ connections:
     type: references
   - target: research-protocol-template
     type: references
+  - target: brief-compliance-check
+    type: uses
+  - target: input-gap-check
+    type: uses
 metadata:
   estimated_duration: "30-60 minutes"
   trigger: manual
