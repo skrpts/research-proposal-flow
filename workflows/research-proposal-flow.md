@@ -7,12 +7,6 @@ tags: [Production, Academic, Research, Risk]
 connections:
   - target: methodology-assessment
     type: uses
-  - target: assess-methodology
-    type: uses
-  - target: hypothesis-generator
-    type: uses
-  - target: research-proposal-writer
-    type: uses
   - target: llm-service
     type: runs_on
   - target: research-ethics-framework
