@@ -36,10 +36,10 @@ You are an academic researcher. Draft a research proposal using the inputs below
 
 ### Inputs
 
-- **Research question:** {{steps.identify-research-gaps.output}}
-- **Hypotheses:** {{steps.hypothesis-generator.output}}
-- **Gap analysis:** {{steps.identify-research-gaps.output}}
-- **Methodology:** {{steps.assess-methodology.output}}
+- **Research question:** {{steps.Research Gap Identification.output}}
+- **Hypotheses:** {{steps.Hypothesis Generator.output}}
+- **Gap analysis:** {{steps.Research Gap Identification.output}}
+- **Methodology:** {{steps.Methodology Assessment.output}}
 - **Target length:** {{input.target_length}}
 
 Use the research field description and existing literature from the gap analysis to ground the proposal's introduction and rationale.

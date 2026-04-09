@@ -31,7 +31,7 @@ Generate 3-5 hypotheses, ordered from most to least promising based on theoretic
 
 ### Inputs
 
-- **Gap analysis:** {{steps.identify-research-gaps.output}}
+- **Gap analysis:** {{steps.Research Gap Identification.output}}
 - **Available resources/constraints:** {{input.available_resources}}
 
 Use the literature summary, known limitations, and field description established in the gap analysis as the foundation for generating hypotheses.
