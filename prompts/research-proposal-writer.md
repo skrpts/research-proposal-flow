@@ -36,9 +36,9 @@ You are an academic researcher. Draft a research proposal using the inputs below
 
 ### Inputs
 
-- **Research question:** {{steps.Research Gap Identification.output}}
+- **Research question:** {{steps.previous.output}}
 - **Hypotheses:** {{steps.Hypothesis Generator.output}}
-- **Gap analysis:** {{steps.Research Gap Identification.output}}
+- **Gap analysis:** {{steps.previous.output}}
 - **Methodology:** {{steps.Methodology Assessment.output}}
 - **Target length:** {{input.target_length}}
 
