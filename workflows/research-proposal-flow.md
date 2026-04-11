@@ -24,6 +24,14 @@ connections:
 metadata:
   estimated_duration: "30-60 minutes"
   trigger: manual
+execution:
+  - skill: "gap-analysis"
+  - skill: "methodology-assessment"
+    input_from: "gap-analysis"
+  - skill: "brief-compliance-check"
+    input_from: "gap-analysis"
+  - skill: "input-gap-check"
+    input_from: "gap-analysis"
 ---
 
 ## Overview
