@@ -4,6 +4,13 @@ id: research-proposal-writer
 title: Research Proposal Writer
 description: "Drafts a complete research proposal from hypotheses and methodology"
 tags: [Production, Academic, Research]
+inputs:
+  target_length:
+    label: "Target Length"
+    description: "Desired length of the output"
+    example: "500 words"
+    required: true
+    type: text
 connections:
   - target: gap-analysis
     type: derived_from

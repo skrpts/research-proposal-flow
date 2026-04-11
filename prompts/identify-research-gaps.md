@@ -4,6 +4,25 @@ id: identify-research-gaps
 title: Identify Research Gaps
 description: "Analyses existing literature to find gaps, contradictions, and opportunities for new research"
 tags: [Production, Academic, Research]
+inputs:
+  research_topic:
+    label: "Research Topic"
+    description: "The research area or question to investigate"
+    example: "Machine learning applications in early disease detection"
+    required: true
+    type: text
+  literature_summary:
+    label: "Literature Summary"
+    description: "A summary of the existing literature on the topic"
+    example: "Three meta-analyses have examined this relationship..."
+    required: true
+    type: text
+  known_limitations:
+    label: "Known Limitations"
+    description: "Known limitations or constraints in the existing literature"
+    example: "Most studies use self-reported data. Limited longitudinal evidence."
+    required: true
+    type: text
 connections:
   - target: gap-analysis
     type: derived_from

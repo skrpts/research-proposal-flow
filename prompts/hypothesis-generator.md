@@ -4,6 +4,13 @@ id: hypothesis-generator
 title: Hypothesis Generator
 description: "Generates testable hypotheses from research gaps and existing findings"
 tags: [Production, Academic, Research]
+inputs:
+  available_resources:
+    label: "Available Resources"
+    description: "Resources available for the research (time, funding, equipment, access)"
+    example: "6 months, university library access, no external funding"
+    required: true
+    type: text
 connections:
   - target: gap-analysis
     type: derived_from

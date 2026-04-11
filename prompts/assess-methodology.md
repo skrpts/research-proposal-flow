@@ -4,6 +4,13 @@ id: assess-methodology
 title: Assess Methodology
 description: "Evaluates a research methodology for rigour and appropriateness"
 tags: [Production, Academic, Research]
+inputs:
+  field_specific_standards:
+    label: "Field Standards"
+    description: "Field-specific reporting standards"
+    example: "CONSORT for RCTs, STROBE for observational studies"
+    required: true
+    type: text
 connections:
   - target: methodology-assessment
     type: derived_from
