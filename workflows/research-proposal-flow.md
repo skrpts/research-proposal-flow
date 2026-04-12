@@ -26,12 +26,16 @@ metadata:
   trigger: manual
 execution:
   - skill: "gap-analysis"
+    step_type: "synthesis"
   - skill: "methodology-assessment"
     input_from: "gap-analysis"
+    step_type: "review"
   - skill: "brief-compliance-check"
     input_from: "gap-analysis"
+    step_type: "review"
   - skill: "input-gap-check"
     input_from: "gap-analysis"
+    step_type: "review"
 ---
 
 ## Overview
