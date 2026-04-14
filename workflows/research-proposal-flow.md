@@ -24,6 +24,12 @@ connections:
 metadata:
   estimated_duration: "30-60 minutes"
   trigger: manual
+output_step: "gap-analysis"
+composite_steps:
+  - "methodology-assessment"
+  - "brief-compliance-check"
+  - "input-gap-check"
+  - "gap-analysis"
 execution:
   - skill: "gap-analysis"
     step_type: "synthesis"

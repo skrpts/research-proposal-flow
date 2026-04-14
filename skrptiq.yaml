@@ -3,7 +3,7 @@ id: "1811f639-c062-4cb7-8c00-2dc6e5c1ec51"
 name: "research-proposal-flow"
 display_name: "Research Proposal Flow"
 description: "Gap analysis, hypothesis generation, methodology design, and proposal drafting"
-version: "1.1.11"
+version: "1.1.12"
 engine: ">=1.0.0"
 
 # --- Attribution ---
@@ -29,14 +29,6 @@ requires:
     - "network:doi.org"
   data_handling:
     - "pii"
-
-# --- Output ---
-output_step: "gap-analysis"
-composite_steps:
-  - "methodology-assessment"
-  - "brief-compliance-check"
-  - "input-gap-check"
-  - "gap-analysis"
 
 # --- Contents ---
 contents:
