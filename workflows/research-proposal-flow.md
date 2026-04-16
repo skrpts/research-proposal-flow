@@ -7,6 +7,8 @@ tags: [Production, Academic, Research, Risk]
 connections:
   - target: methodology-assessment
     type: uses
+  - target: language-polish
+    type: uses
   - target: llm-service
     type: runs_on
   - target: research-ethics-framework
@@ -24,12 +26,13 @@ connections:
 metadata:
   estimated_duration: "30-60 minutes"
   trigger: manual
-output_step: "gap-analysis"
+output_step: "language-polish"
 composite_steps:
   - "methodology-assessment"
   - "brief-compliance-check"
   - "input-gap-check"
   - "gap-analysis"
+  - "language-polish"
 execution:
   - skill: "gap-analysis"
     step_type: "synthesis"
@@ -40,6 +43,8 @@ execution:
       step_type: "review"
   - skill: "methodology-assessment"
     step_type: "review"
+  - skill: "language-polish"
+    step_type: "content"
 ---
 
 ## Overview
