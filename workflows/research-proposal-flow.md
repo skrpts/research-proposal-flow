@@ -36,6 +36,7 @@ composite_steps:
 execution:
   - skill: "gap-analysis"
     step_type: "synthesis"
+    prompt: "identify-research-gaps"
   - parallel:
     - skill: "brief-compliance-check"
       step_type: "review"
