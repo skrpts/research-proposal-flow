@@ -39,12 +39,15 @@ execution:
     prompt: "identify-research-gaps"
   - parallel:
     - skill: "brief-compliance-check"
+      prompt: "check-brief-compliance"
       step_type: "review"
     - skill: "input-gap-check"
       step_type: "review"
   - skill: "methodology-assessment"
+    prompt: "assess-methodology"
     step_type: "review"
   - skill: "language-polish"
+    prompt: "polish-language"
     step_type: "content"
 ---
 
