@@ -3,7 +3,7 @@ id: "1811f639-c062-4cb7-8c00-2dc6e5c1ec51"
 name: "research-proposal-flow"
 display_name: "Research Proposal Flow"
 description: "Gap analysis, hypothesis generation, methodology design, and proposal drafting"
-version: "1.1.18"
+version: "1.1.19"
 engine: ">=1.0.0"
 
 # --- Attribution ---
@@ -33,10 +33,10 @@ requires:
 # --- Contents ---
 contents:
   skills: 5
-  prompts: 6
+  prompts: 7
   workflows: 1
   services: 1
   sources: 2
   documents: 2
   assets: 0
-  total: 17
+  total: 18

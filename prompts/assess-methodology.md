@@ -39,7 +39,7 @@ You are a research methodologist. Evaluate the methodology described below again
 ### Inputs
 
 - **Research question:** {{steps.Research Gap Identification.output}}
-- **Proposed methodology:** {{steps.Hypothesis Generator.output}}
+- **Proposed methodology:** {{steps.Research Gap Identification.output}}
 - **Field-specific standards:** {{input.field_specific_standards}}
 
 ## Formatting Rules
