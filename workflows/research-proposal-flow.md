@@ -37,20 +37,24 @@ execution:
   - skill: "gap-analysis"
     step_type: "synthesis"
     prompt: "identify-research-gaps"
+    output: { name: "research_gaps", type: "text" }
   - parallel:
     - skill: "brief-compliance-check"
       prompt: "check-brief-compliance"
       step_type: "review"
+      output: { name: "compliance_verdict", type: "decision" }
       context:
         audience_profile: "General professional audience"
         compliance_brief: "No specific compliance requirements"
         compliance_depth: "Standard"
     - skill: "input-gap-check"
       prompt: "check-input-gaps"
-    step_type: "validation"
+      step_type: "validation"
+      output: { name: "input_gaps", type: "decision" }
   - skill: "methodology-assessment"
     prompt: "assess-methodology"
     step_type: "review"
+    output: { name: "methodology_assessment", type: "text" }
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"

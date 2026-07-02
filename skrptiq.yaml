@@ -3,7 +3,7 @@ id: "1811f639-c062-4cb7-8c00-2dc6e5c1ec51"
 name: "research-proposal-flow"
 display_name: "Research Proposal Flow"
 description: "Gap analysis, hypothesis generation, methodology design, and proposal drafting"
-version: "1.1.27"
+version: "1.1.28"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -94,3 +94,17 @@ contents:
   documents: 1
   assets: 0
   total: 5
+
+security:
+  status: "pass"
+  scanned_at: "2026-07-02T19:58:05.709Z"
+  scanner_version: "3.3.0"
+  syntactic: "pass"
+  structural: "pass"
+  detected:
+    services: ["llm-service"]
+    permissions: []
+    data_handling: []
+  undeclared: []
+  warnings: []
+  report_url: "https://hub.skrptiq.ai/skrpts/research-proposal-flow/security"
