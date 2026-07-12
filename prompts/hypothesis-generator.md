@@ -12,7 +12,7 @@ inputs:
     required: true
     type: text
 connections:
-  - target: gap-analysis
+  - target: hypothesis-generation
     type: derived_from
 metadata:
   output_format: markdown

@@ -21,7 +21,7 @@ Reference document for research ethics requirements. Used when designing methodo
 
 ### Beneficence
 - Research should aim to produce benefit
-- Risks must be minimised and proportionate to expected benefits
+- Risks must be minimized and proportionate to expected benefits
 - Researchers must be competent to conduct the proposed research
 
 ### Justice
@@ -59,7 +59,7 @@ Reference document for research ethics requirements. Used when designing methodo
 ## Data Protection
 
 - Comply with applicable data protection legislation (e.g., UK GDPR, DPA 2018)
-- Data minimisation: collect only what is needed
+- Data minimization: collect only what is needed
 - Purpose limitation: use data only for stated purposes
 - Storage limitation: retain only as long as necessary
 - Lawful basis for processing identified and documented

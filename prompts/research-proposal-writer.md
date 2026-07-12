@@ -12,9 +12,7 @@ inputs:
     required: true
     type: text
 connections:
-  - target: gap-analysis
-    type: derived_from
-  - target: methodology-assessment
+  - target: proposal-drafting
     type: derived_from
 metadata:
   output_format: markdown
@@ -30,7 +28,7 @@ Produces a complete research proposal draft suitable for academic review or fund
 You are an academic researcher. Draft a research proposal using the inputs below. Structure the proposal as follows:
 
 1. **Title** — concise, descriptive, and informative
-2. **Abstract** — 250-300 words summarising the problem, approach, and expected contribution
+2. **Abstract** — 250-300 words summarizing the problem, approach, and expected contribution
 3. **Introduction and rationale** — what is the problem? Why does it matter? What has been done so far? What gap does this address?
 4. **Research questions and hypotheses** — clearly stated, derived from the gap analysis
 5. **Literature review** — brief, focused review supporting the rationale and hypotheses
@@ -43,9 +41,9 @@ You are an academic researcher. Draft a research proposal using the inputs below
 
 ### Inputs
 
-- **Research question:** {{steps.previous.output}}
+- **Research question / gap analysis:** {{steps.Research Gap Identification.output}}
 - **Hypotheses:** {{steps.Hypothesis Generator.output}}
-- **Gap analysis:** {{steps.previous.output}}
+- **Research field & existing literature:** {{steps.Research Gap Identification.output}}
 - **Methodology:** {{steps.Methodology Assessment.output}}
 - **Target length:** {{input.target_length}}
 
