@@ -1,5 +1,11 @@
 # Release Notes
 
+## v1.1.31
+GH#1044 — the last of the required-but-undocumented inputs, resolved by testing whether the existing table name is itself required by a prompt rather than by how similar the names look. Renamed existing_literature_review_or to the name the prompt consumes; documented literature_summary, research_topic. Rows generated from the requiring prompt's own declared description, example and required flag. No behaviour change; documentation only.
+
+## v1.1.30
+GH#1044 — document the inputs this workflow's prompts REQUIRE but its Inputs table never listed. A user supplying exactly what the table asked for was running with required parameters unsatisfied — a silent wrong run, not a documentation nicety. Renamed 1 row(s) (existing_literature_review_or) to the name the prompt actually consumes; documented 3 input(s): known_limitations, literature_summary, research_topic. Every row is generated from the requiring prompt's own declared description, example and required flag — none invented. No behaviour change; documentation only.
+
 ## v1.1.29
 GH#818 Phase 1 (Tier 1) — fix intent-vs-output: the pipeline promised a drafted proposal but ran gap-analysis + methodology-assessment → polish (it polished the ANALYSIS). The `hypothesis-generator` and `research-proposal-writer` prompts were shipped but never wired in. Wire both on dedicated local skills (`hypothesis-generation` → "Hypothesis Generator", `proposal-drafting` → "Proposal Drafting"): gap-analysis → hypothesis → methodology → **research-proposal-writer(draft)** → polish. Re-point the proposal-writer's gap refs to `{{steps.Research Gap Identification.output}}` (resolvable title). Polish binds `source` `from_step "Proposal Drafting"`; coherent-lock all deps to current published (repin `polish-language` → 1.0.5, `check-brief-compliance` → 1.0.3 with its new `source` binding). contents skills 0→2.
 

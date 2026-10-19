@@ -137,12 +137,14 @@ Invoke the **research-proposal-writer** prompt to produce a complete proposal co
 
 | Name | Required | Description | Example |
 |------|----------|-------------|---------|
-| `{{input.existing_literature_review_or}}` | Yes | Existing literature review or summary of the field | `Paste your literature review or summary of existing research here.` |
+| `{{input.literature_summary}}` | Yes | A summary of the existing literature on the topic | `Three meta-analyses have examined this relationship...` |
 | `{{input.research_field_description}}` | Yes | Description of the research field or discipline | `Educational technology in UK higher education` |
 | `{{input.existing_findings_from_the}}` | Yes | Existing findings from the literature and known limitations | `Studies show X but have not examined Y...` |
 | `{{input.field_specific_standards}}` | No | Field-specific methodological standards | `CONSORT for RCTs, PRISMA for systematic reviews` |
 | `{{input.available_resources}}` | No | Available resources and constraints for the proposed research | `12-month timeline, access to 3 secondary schools, no external funding` |
 | `{{input.target_length}}` | No | Target length for the proposal | `3000 words` |
+| `{{input.known_limitations}}` | Yes | Known limitations or constraints in the existing literature | `Most studies use self-reported data. Limited longitudinal evidence.` |
+| `{{input.research_topic}}` | Yes | The research area or question to investigate | `Machine learning applications in early disease detection` |
 
 ## Outputs
 
