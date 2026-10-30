@@ -1,5 +1,14 @@
 # Release Notes
 
+## v1.1.32
+GH#1100 consumer wave batch 6 — declare the data flow these steps were resolving positionally. 3 binding(s) added.
+
+Two slots take declared inputs. `identify-research-gaps` ("Prior Analysis") sits at position 1 with nothing upstream — new required `prior_literature`. `check-input-gaps` ("Inputs Provided") reports what the user omitted, so it cannot come from a step — new required `inputs_provided`.
+
+**This flow now requires input it did not require before.** That is the fix: previously the user supplied nothing for these slots and the step silently received whatever the binding pointed at.
+
+`assess-methodology` (slot "Research Gap Analysis") binds Research Gap Identification rather than its positional predecessor, which emits hypotheses — the label names the step exactly.
+
 ## v1.1.31
 GH#1044 — the last of the required-but-undocumented inputs, resolved by testing whether the existing table name is itself required by a prompt rather than by how similar the names look. Renamed existing_literature_review_or to the name the prompt consumes; documented literature_summary, research_topic. Rows generated from the requiring prompt's own declared description, example and required flag. No behaviour change; documentation only.
 

@@ -39,11 +39,27 @@ composite_steps:
   - "language-polish"
   - "brief-compliance-check"
   - "input-gap-check"
+inputs:
+  inputs_provided:
+    label: "Inputs Provided"
+    description: "What was supplied for this proposal — the question, scope and constraints, so gaps in it can be reported"
+    example: "Question: does async standup reduce coordination overhead? 6-month window, no funding secured"
+    required: true
+    type: text
+  prior_literature:
+    label: "Prior Literature"
+    description: "The prior work the research gaps are identified against"
+    example: "12 papers on remote-team coordination, 2019-2025, with abstracts"
+    required: true
+    type: text
 execution:
   - skill: "gap-analysis"
     step_type: "synthesis"
     prompt: "identify-research-gaps"
     output: { name: "research_gaps", type: "text" }
+    bindings:
+      source:
+        from_input: "prior_literature"
   - skill: "hypothesis-generation"
     prompt: "hypothesis-generator"
     step_type: "generation"
@@ -52,6 +68,10 @@ execution:
     prompt: "assess-methodology"
     step_type: "review"
     output: { name: "methodology_assessment", type: "text" }
+    bindings:
+      source:
+        from_step: "Research Gap Identification"
+        field: output
   - skill: "proposal-drafting"
     prompt: "research-proposal-writer"
     step_type: "generation"
@@ -84,6 +104,9 @@ execution:
       prompt: "check-input-gaps"
       step_type: "validation"
       output: { name: "input_gaps", type: "decision" }
+      bindings:
+        source:
+          from_input: "inputs_provided"
 ---
 
 ## Overview

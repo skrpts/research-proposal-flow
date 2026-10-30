@@ -3,7 +3,7 @@ id: "1811f639-c062-4cb7-8c00-2dc6e5c1ec51"
 name: "research-proposal-flow"
 display_name: "Research Proposal Flow"
 description: "Gap analysis, hypothesis generation, methodology design, and proposal drafting"
-version: "1.1.31"
+version: "1.1.32"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -25,36 +25,36 @@ tags:
 dependencies:
   - id: "258b7728-47d6-487c-914a-7dcfa0ce4dcb"
     name: "assess-methodology"
-    version: 1.0.2
-    checksum: "sha256:9b388ef5daa4e78bef53116f485038a5991957c57634b9d339185bf23e96c0d4"
+    version: 1.0.4
+    checksum: "sha256:c21feda4a8e75e791a896807d668c95ea576719fa5839fddbd352b9cfd95a4b8"
   - id: "4d802a36-2cdd-444e-b3bf-39383793c6b3"
     name: "brief-compliance-check"
     version: 1.0.2
     checksum: "sha256:1b6963d45031ea40dd7f5da0eefda2a9227086244fa5b36713a421ecd7ba8a18"
   - id: "e59f27f4-21ab-4b14-b171-3e9a6100ebaa"
     name: "check-brief-compliance"
-    version: 1.0.3
-    checksum: "sha256:9b0d4f00d196cb1cdf75f83930fce99fb2424ddc3f19de1652f0f9a1a8483c8f"
+    version: 1.0.4
+    checksum: "sha256:2f7e84a2dd87a535add21c9781fd1ae79f17d4fbc84355919b61ffaba27ad2c2"
   - id: "01a55f0b-66e4-4059-9695-3d6043605add"
     name: "check-input-gaps"
-    version: 1.0.3
-    checksum: "sha256:b57575f002d3727b7507bf5b1bb548d2b517bc4542bef47f843a3b119ad131d5"
+    version: 1.0.5
+    checksum: "sha256:6b1a3537a2f244b44b556d47da7fe2d6a1ddd9968210aa2be85ed8171dd173eb"
   - id: "ac742f34-ba4c-469c-861a-1a97403f092b"
     name: "gap-analysis"
-    version: 1.0.2
-    checksum: "sha256:fd88e4adcc8de6808f5bd02737084f5f715fa393ccd69134591ea005598e5d94"
+    version: 1.0.3
+    checksum: "sha256:5a7471d4c168a8d48615f7fd25888b03722a8098ead6f2fcd2cab6360cae9a67"
   - id: "2d8ba838-4b6e-4b33-ad6b-cd2bdc8b9cac"
     name: "identify-research-gaps"
-    version: 1.0.2
-    checksum: "sha256:8f72b4e55d405ab8880171e33a596b64fd2604b8894adbe8bf2284e9d3fd521b"
+    version: 1.0.3
+    checksum: "sha256:6272bd8c0dbbf662d5cdbc6aced466ac848a070b58e6395ed226e0b1872e11f3"
   - id: "a20ad2f8-a4ca-4c9f-a39b-5674f0773881"
     name: "input-gap-check"
-    version: 1.0.2
-    checksum: "sha256:935012bdf74f8b3a81f2ba95e1a7749d375dba43765d5c2c81b718c06c80bfcf"
+    version: 1.0.3
+    checksum: "sha256:e29d3c2091a058d0751079b8026038734d0412a7aec0938d72290815fe443bf7"
   - id: "3db66b8b-8758-4503-a555-5330f3f9b3d9"
     name: "language-polish"
-    version: 1.0.2
-    checksum: "sha256:2ae0f809dfda7255c7ea33ae24c55c034a4a32dc678a49d5116bfe4ea7f519b5"
+    version: 1.0.3
+    checksum: "sha256:efe38bb2b4ba213139299818cc4c7d694270fcfd7ec4d3c738e2170f6394bbd6"
   - id: "fcab9536-a13e-49c9-b0c3-bb3097682e69"
     name: "llm-service"
     version: 1.0.2
@@ -65,8 +65,8 @@ dependencies:
     checksum: "sha256:15b8b8d8fb18a9cc5645750c3ddfcb7d01b78197d400612a2827ae4e09297124"
   - id: "9b1771e0-39b0-4fbc-8d45-738f51b6083a"
     name: "polish-language"
-    version: 1.0.5
-    checksum: "sha256:ed82949cbb2b80f5fe03f28a0b5f5b70a712594ca82b0f26f93ba689564edf87"
+    version: 1.0.7
+    checksum: "sha256:637891c464e09eb353932f9a37a59dd8bfe77be7117fb6918e032fba802040d0"
   - id: "22642423-b289-4c34-a31e-91581fc26d15"
     name: "prisma-2020-guidelines"
     version: 1.0.2
@@ -97,7 +97,7 @@ contents:
 
 security:
   status: "pass"
-  scanned_at: "2026-10-19T12:32:53.875Z"
+  scanned_at: "2026-10-30T09:25:30.843Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"
