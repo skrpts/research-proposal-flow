@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.33
+GH#1144 part 1 round 2 — re-pin `input-gap-check`→1.0.4 so the newly declared `supplied_by: input` slot is in scope. A declaration against a pin that predates it is inert: until this re-pin the engine's GH#1139 shape gate could not see it. Checksums resolved from the live catalogue rather than transcribed. No behaviour change here — this step makes the existing `from_input` binding(s) enforced rather than merely correct.
+
 ## v1.1.32
 GH#1100 consumer wave batch 6 — declare the data flow these steps were resolving positionally. 3 binding(s) added.
 
