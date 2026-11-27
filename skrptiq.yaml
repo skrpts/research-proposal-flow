@@ -3,7 +3,7 @@ id: "1811f639-c062-4cb7-8c00-2dc6e5c1ec51"
 name: "research-proposal-flow"
 display_name: "Research Proposal Flow"
 description: "Gap analysis, hypothesis generation, methodology design, and proposal drafting"
-version: "1.1.33"
+version: "1.1.34"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -37,8 +37,8 @@ dependencies:
     checksum: "sha256:2f7e84a2dd87a535add21c9781fd1ae79f17d4fbc84355919b61ffaba27ad2c2"
   - id: "01a55f0b-66e4-4059-9695-3d6043605add"
     name: "check-input-gaps"
-    version: 1.0.5
-    checksum: "sha256:6b1a3537a2f244b44b556d47da7fe2d6a1ddd9968210aa2be85ed8171dd173eb"
+    version: 1.0.6
+    checksum: "sha256:42c39252211b7baf4ee85c4e26030b771913dc9e0f00adf3f6838753583faa8c"
   - id: "ac742f34-ba4c-469c-861a-1a97403f092b"
     name: "gap-analysis"
     version: 1.0.3
@@ -97,7 +97,7 @@ contents:
 
 security:
   status: "pass"
-  scanned_at: "2026-11-08T15:21:54.204Z"
+  scanned_at: "2026-11-27T21:30:34.880Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"
